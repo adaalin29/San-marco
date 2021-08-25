@@ -1,0 +1,39 @@
+{
+    "name": "local_packages/shoppingcart",
+    "description": "Laravel Shoppingcart Touchmedia",
+    "keywords": ["laravel", "shoppingcart"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Gloudemans",
+            "email": "info@robgloudemans.nl",
+            "homepage": "http://robgloudemans.nl/"
+        },
+        {
+            "name": "Patrick Henninger",
+            "email": "privat@skyraptor.eu",
+            "homepage": "https://skyraptor.eu/"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gloudemans\\Shoppingcart\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gloudemans\\Tests\\Shoppingcart\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "Gloudemans\\Shoppingcart\\Facades\\Cart"
+            }
+        }
+    }
+}
